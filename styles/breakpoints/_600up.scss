@@ -1,0 +1,51 @@
+/******************************************************************
+
+Stylesheet: 600px以上のタブレットやモニタで適用
+
+******************************************************************/
+// 画像の並び方を調整する
+
+.flex {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.travel {
+    &__inner {
+      padding: 50px;
+    }
+    &__img,
+    &__texts {
+      display: flex;
+      align-items: flex-end;
+      flex-basis: 47%;
+    }
+  }
+
+.houses {
+    &__item{
+      // 各ハウスの画像と名称
+      flex-basis: 50%;
+      margin-bottom: 60px;
+    }
+  }
+
+  .popular {
+    &__container {
+      justify-content:  space-between;
+    }
+    &__item{
+      // 各観光地の画像と名称
+      flex-basis: 47%;
+    }
+  }
+
+  .footer {
+    & .logo {
+      justify-content: flex-start;
+    }
+
+    &__li {
+      margin-left: 0;
+      margin-right: 30px;
+    }
+  }
